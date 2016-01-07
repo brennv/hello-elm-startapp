@@ -85,4 +85,4 @@ For more guidelines and examples of making apps in Elm, check out the following 
 
 ## Credit
 
-Elm, StartApp, the start-app example and large portions of this readme were created by [@evancz](https://github.com/evancz).
+Elm, StartApp, the start-app example and portions of this readme were created by [@evancz](https://github.com/evancz).
