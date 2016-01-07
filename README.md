@@ -1,36 +1,54 @@
-# Hello Elm StartApp
+# Elm StartApp example
 
-Getting started with Elm is now easier than ever with the [StartApp][start-app] package.
+Getting started with Elm is now easier than ever with the [StartApp][start-app] package. This repo is an excerpt from the StartApp readme example and contains the minimal code needed to create a simple counter with elm using StartApp.
 
 ## Getting started
 
 Make sure you have [elm][elm-install] installed. 
 
-Clone this repo.
+Clone this repo...
 
 ```git clone https://github.com/brennan-v-/hello-elm-startapp.git```
 
->You need two files in a fresh directory:
->
-* **HelloElmStartApp.elm**, from the start-app README
-* **elm-package.json**, so elm knows what packages to install
+Or grab the code from the [StartApp][start-app] example and include the following in a new **elm-package.json** file:
 
-Step into your new directory and make your app:
+>```
+{
+    "version": "1.0.0",
+    "summary": "",
+    "repository": "",
+    "license": "BSD3",
+    "source-directories": [
+        "."
+    ],
+    "exposed-modules": [],
+    "dependencies": {
+        "elm-lang/core": "3.0.0 <= v < 4.0.0",
+        "evancz/elm-html": "4.0.2 <= v < 5.0.0",
+        "evancz/start-app": "1.0.0 <= v < 3.0.0"
+    },
+    "elm-version": "0.16.0 <= v < 0.17.0"
+}
+```
+
+## Running elm-make
+Step into your new directory and make your app by running elm-make.
 
 ```elm-make HelloElmStartApp.elm```
 
 Elm will start installing the necessary components with your approval. 
 
-```
-Some new packages are needed. Here is the upgrade plan.
 
+>```
+Some new packages are needed. Here is the upgrade plan.
+>
   Install:
     elm-lang/core 3.0.0
     evancz/elm-effects 2.0.1
     evancz/elm-html 4.0.2
     evancz/start-app 2.0.2
     evancz/virtual-dom 2.1.0
-
+>
 Do you approve of this plan? (y/n) y
 Downloading elm-lang/core
 Downloading evancz/elm-effects
@@ -42,9 +60,9 @@ Success! Compiled 40 modules.
 Successfully generated index.html
 ```
 
-Done!
+And you're done! 
 
-Grab your browser and open your new **index.html** file :)
+Grab your browser and open the new **index.html** file :)
 
 [arch]: https://github.com/evancz/elm-architecture-tutorial/
 [elm-html]: http://elm-lang.org/blog/Blazing-Fast-Html.elm
@@ -63,3 +81,7 @@ For more guidelines and examples of making apps in Elm, check out the following 
 [elm-todomvc]: https://github.com/evancz/elm-todomvc/blob/master/Todo.elm
 [live]: http://evancz.github.io/elm-todomvc/
 [dreamwriter]: https://github.com/rtfeldman/dreamwriter/
+
+## Credit
+
+Elm, StartApp, the start-app example and large portions of this readme were created by [@evancz](https://github.com/evancz).
