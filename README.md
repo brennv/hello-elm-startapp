@@ -10,7 +10,7 @@ Clone this repo...
 
 ```git clone https://github.com/brennan-v-/hello-elm-startapp.git```
 
-Or grab the code from the [StartApp][start-app] readme, and include the following in a new **elm-package.json** file:
+...or grab the code from the [StartApp][start-app] readme, and include the following in a new **elm-package.json** file:
 
 >```
 {
