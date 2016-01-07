@@ -1,16 +1,16 @@
 # Elm StartApp example
 
-Getting started with Elm is now easier than ever with the [StartApp][start-app] package. This repo is an excerpt from the StartApp readme example and contains the minimal code needed to create a simple counter with elm using StartApp.
+Getting started with [Elm][elm-lang] is now easier than ever with the Elm [StartApp][start-app] package. This repo is an excerpt from the StartApp readme example and contains the minimal code needed to create a simple counter with Elm using StartApp.
 
 ## Getting started
 
-Make sure you have [elm][elm-install] installed. 
+Make sure you have [Elm installed][elm-install]. 
 
 Clone this repo...
 
 ```git clone https://github.com/brennan-v-/hello-elm-startapp.git```
 
-Or grab the code from the [StartApp][start-app] example and include the following in a new **elm-package.json** file:
+Or grab the code from the [StartApp][start-app] readme, and include the following in a new **elm-package.json** file:
 
 >```
 {
@@ -36,7 +36,7 @@ Step into your new directory and make your app by running elm-make.
 
 ```elm-make HelloElmStartApp.elm```
 
-Elm will start installing the necessary components with your approval. 
+Elm will install the necessary components with your approval. 
 
 
 >```
@@ -68,6 +68,7 @@ Grab your browser and open the new **index.html** file :)
 [elm-html]: http://elm-lang.org/blog/Blazing-Fast-Html.elm
 [start-app]: http://package.elm-lang.org/packages/evancz/start-app/2.0.2/
 [elm-install]: http://elm-lang.org/install
+[elm-lang]: http://elm-lang.org/
 
 ## Further Learning
 
