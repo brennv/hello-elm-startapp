@@ -10,7 +10,38 @@ Clone this repo...
 
 ```git clone https://github.com/brennan-v-/hello-elm-startapp.git```
 
-...or grab the code from the [StartApp][start-app] readme, and include the following in a new **elm-package.json** file:
+...or copy this example code from the [StartApp][start-app] readme into a new **.elm** file:
+
+>```
+import Html exposing (div, button, text)
+import Html.Events exposing (onClick)
+import StartApp.Simple as StartApp
+>
+>
+main =
+  StartApp.start { model = model, view = view, update = update }
+>
+>
+model = 0
+>
+>
+view address model =
+  div []
+    [ button [ onClick address Decrement ] [ text "-" ]
+    , div [] [ text (toString model) ]
+    , button [ onClick address Increment ] [ text "+" ]
+    ]
+>
+>
+type Action = Increment | Decrement
+>
+>
+update action model =
+  case action of
+    Increment -> model + 1
+    Decrement -> model - 1
+
+...and include the following in a new **elm-package.json** file:
 
 >```
 {
